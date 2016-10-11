@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "_config";
+@import "_mixin";
+
+@each $n1, $v1 in (m:margin,p:padding) {
+    @each $n2,$v2 in (t:top,l:left,r:right,b:bottom){
+        @for $v3 from 0 through 6{
+            .#{$n1}#{$n2}#{$v3*5}{
+                #{$v1}-#{$v2}:#{$v3*5}px!important; 
+            }
+        }
+    }
+}
+
+.hide{display: none;}
+.bold{font-weight: 700;}
+.oh{overflow: hidden;}
+.clearfix{clear: both}
+.clear:after{content: "";display: block;clear: both;}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;} 
+.underline{text-decoration: underline;}
+.btn{text-align: center;border: none;}
+a.btn{display: inline-block;text-decoration: none;}
+
+@each $n,$v in (a:absolute,f:fixed,r:relative,s:static){
+    .p#{$n}{
+        position: $v!important;
+    }
+}
+
+
+@each $n,$v in (l:left,n:none,r:right){
+    .f#{$n}{
+        float: $v!important;
+    }
+}
+
+@each $n,$v in (l:left,c:center,r:right){
+    .t#{$n}{
+        text-align: $v!important;
+    }
+}
+
+@each $v in (12,13,14,15,16,17,18,19,20,25,30){
+    .fz#{$v}{
+        font-size: #{$v}px!important;
+    }
+}

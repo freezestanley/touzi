@@ -1,0 +1,136 @@
+/* layout */
+.pg-prod{
+  padding-top: 77px;
+  background-color: #fff;
+  .list{
+    .box{
+      width: 100%;
+      height: 428px;
+      position: relative;
+      &:first-of-type,&:last-of-type{
+        background-color: #f4f4f4;
+        .intro-summary{
+          left: 25px;
+          right: auto;
+        }
+      }
+      .t{
+        font-size: 25px;
+        color: #7d7d7d;
+      }
+      .intro-img{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &1{
+          right: 8px;
+          top: 86px;
+          width: 481px;
+          height: 276px;
+          background-image: url(../../images/prodintro1.png);
+        }
+        &2{
+          left: 42px;
+          top: 63px;
+          width: 435px;
+          height: 291px;
+          background-image: url(../../images/prodintro2.png);
+        }
+        &3{
+          right: 77px;
+          top: 80px;
+          width: 371px;
+          height: 272px;
+          background-image: url(../../images/prodintro3.png);
+        }
+      }
+      .intro-summary{
+        width: 440px;
+        position: absolute;
+        right: 10px;
+        top: 100px;
+        line-height: 2;
+        font-size: 16px;
+        color: #393939
+      }
+    }
+  }
+}
+
+.ui-btn{
+  border-radius: 20px;
+  background-color: rgb(23, 206, 152);
+  width: 165px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+}
+
+.crumb{
+  color: #979797;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 200;
+  a{
+    color: #979797;
+  }
+}
+
+.intro-table{
+  width: 100%;
+  margin-top: 45px;
+  overflow: hidden;
+  > h2{
+    font-size: 25px;
+    color: #858585;
+    text-align: center;
+    margin: 30px 0 25px;
+  }
+  .cell{
+    width: 33%;
+    min-height: 250px;
+    float: left;
+    border-left: 1px solid #efefef;
+    @at-root .pg-core &{
+      min-height: 200px;
+    }
+    &:first-of-type{
+      border-left: 0 none;
+    }
+    .t{
+      margin-top: 5px;
+      font-size: 18px;
+      color: #858585;
+      text-align: center;
+    }
+    p{
+      padding: 15px 35px 5px;
+      line-height: 2;
+      font-size: 16px;
+      color: #393939;
+    }
+    .icon-prod{
+      margin: 0 auto;
+    }
+  }
+}
+
+.icon-prod{
+    width: 50px;
+    height: 52px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../images/icon_prod.png);
+    margin: 0 auto 30px;
+    @for $i from 0 through 9 {
+      &.icon#{$i+1}{
+        background-position: center (-$i*52px);
+      }
+    }
+  }

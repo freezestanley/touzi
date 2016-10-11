@@ -1,0 +1,72 @@
+@charset "utf-8";
+//result start
+.mod-result{
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 14px;
+  text-align: center;
+  color: #5e5e5e;
+  .icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 57px;
+    height: 57px;
+    background-image: url(/images/sprites.png);
+    background-repeat: no-repeat;
+  }
+  .icon-error{
+    background-position: 0 -70px;
+  }
+  .icon-success{
+    background-position: 0 0;
+  }
+  .result{
+    zoom:1;
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+  }
+  .result-title{
+    line-height: 1;
+    font-size: 22px;
+    font-family: 'Microsoft YaHei';
+    font-weight: normal;
+    margin-bottom: 6px;
+  }
+  .result-txt{
+
+  }
+  .btns-box{
+    text-align: left;
+    .btns{
+      min-width: 120px;
+      margin: 0;
+    }
+  }
+}
+
+.mod-error,.mod-success{
+  zoom:1;
+  display: inline-block;
+  *display: inline;
+  text-align: left;
+  padding-left: 70px;
+  .icon-error,.icon-success{
+    margin-left: -70px;
+    margin-right: 13px;
+  }
+}
+.mod-error{
+  .result-title{
+    color: #ff5350;
+  }
+}
+.mod-success{
+  .result-title{
+    color: #75b82b;
+  }
+}
+//end result

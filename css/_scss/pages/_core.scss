@@ -1,0 +1,19 @@
+/* layout */
+.pg-core{
+  padding-top: 77px;
+  background-color: #fff;
+}
+
+.icon-core{
+    width: 64px;
+    height: 52px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../images/icon_core.png);
+    margin: 0 auto 30px;
+    @for $i from 0 through 8 {
+      &.icon#{$i+1}{
+        background-position: center (-$i*52px);
+      }
+    }
+  }

@@ -1,0 +1,7 @@
+$z-index       : 10000; 
+
+$mask-zindex   : $z-index;
+$loading-zindex: $mask-zindex+1;
+$alert-zindex: $mask-zindex+1;
+
+$theme-color   : #00a9de;

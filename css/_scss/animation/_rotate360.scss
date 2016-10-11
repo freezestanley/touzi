@@ -1,0 +1,18 @@
+@keyframes rotate360{
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); }
+}
+
+@mixin rotate360( $time, $count:null ){
+    animation: rotate360 #{$time} linear; 
+    @if $count == null{
+        animation-iteration-count: infinite;
+    }
+    @else if $count > 1{
+        animation-iteration-count: #{$count};
+    }
+}
+
+.rotate360{
+    @include rotate360(2s);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link type="image/x-icon" rel="shortcut icon">
+    <title></title>
+    <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    
+    <style>
+        .dajiangyou{
+            background-color: #fff!important;
+            color: #00a9de!important;
+        }
+    </style>
+</head>
+<body>
+<div id="viewport">
+    <div class="pl30 pt20">
+        <h2>Alert</h2>
+        <button class="btns" event-src="alert">弹出</button>
+    </div>
+    <div class="pl30 mt20">
+        <h2>Confirm</h2>
+        <button class="btns" event-src="confirm">弹出</button>
+    </div>
+    <div class="pl30 mt20">
+        <h2>Confirm 多按钮</h2>
+        <button class="btns" event-src="confirm2">弹出</button>
+    </div>
+    <div class="pl30 mt20">
+        <h2>分页</h2>
+        <button class="btns" event-src="displayPager">显示</button>
+        <p id="pager" class="pagination mt10"></p>
+    </div>
+    <div class="pl30 mt20">
+        <h2>日期</h2>
+        <input id="datePicker" type="text"/>
+    </div>
+    <div class="pl30 mt20">
+        <h2>文件上传</h2>
+<!--        <input id="fileUpload" type="file"/>-->
+        <input id="fileUpload" type="file" accept=".xls,.xlsx"/>
+    </div>
+</div>
+</body>
+<script>
+var zero_config = {
+    controller: '/js/page/components/zerotest.js',
+    data: {
+
+    },
+    paths: {},
+    shim: {}
+}
+</script>
+<script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js"></script>
+</html>

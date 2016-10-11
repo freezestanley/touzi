@@ -1,0 +1,12 @@
+@keyframes fadein-top-down{
+    0%{ opacity: 0; transform: translate3d(0,-100%,0); }
+    100%{ opacity: 1; transform: translate3d(0,0,0); }
+}
+
+@mixin fadein-top-down( $time ){
+    animation: fadein-top-down #{$time};        
+}
+
+.fadein-top-down{
+    @include fadein-top-down(.5s);
+}

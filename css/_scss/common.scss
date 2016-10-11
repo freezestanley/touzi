@@ -1,0 +1,18 @@
+@import "base/_func";
+@import "base/_config";
+
+@import "components/layout";
+@import "components/btns";
+@import "components/table";
+@import "components/filter";
+@import "components/pagination";
+@import "components/dest";
+
+@import "pages/main";
+@import "pages/prod";
+@import "pages/core";
+@import "pages/about";
+
+.ovfw-a{
+    overflow: auto;
+}

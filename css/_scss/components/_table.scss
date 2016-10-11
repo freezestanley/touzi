@@ -1,0 +1,221 @@
+@charset "utf-8";
+//tables start
+.txt-error,.error,input.txt-error,input.error{
+  border: 1px solid #ff5350;
+}
+th{font-weight: normal;}
+.form-table{
+  width: 100%;
+  table-layout: fixed;
+  color: #4d4d4d;
+  border: 0 none;
+  empty-cells: show;
+  th,td{
+    position: relative;
+    height: 24px;
+    padding: 8px;
+    border: 1px solid #e9e9e9;
+  }
+  caption{
+      // zoom:1;
+      // min-height: 24px;
+      // _height: 24px;
+      // line-height: 24px;
+      // text-align: left;
+      // color: #5e5e5e;
+      margin-bottom: 10px;
+      // padding: 6px 20px;
+      // background-color: #f5f5f5;
+  }
+  .tips-box{
+    position: absolute;
+    z-index: 91;
+    top: -30px;
+    left: 4px;
+  }
+  .row-hd{
+    background-color: #fffdf5;
+    th{
+      i{
+        color: #ff3e3c;
+      }
+    }
+  }
+  .row-bd{
+    td{
+    }
+  }
+  .row-ft{
+    td{
+      padding: 0;
+      border: 0 none;
+    }
+  }
+  .row-ft-bar{
+      td{
+          padding-top: 20px;
+      }
+  }
+  .mod-fee-sum{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .select{
+    height: 24px;
+    line-height: 24px;
+    border: 0 none;
+    &:focus{
+      outline: 0 none;
+    }
+  }
+  .date-picker{
+    border: 0 none;
+  }
+  .date-txt{
+    min-width: 60px;
+    margin-right: 4px;
+  }
+  input.date-txt{
+    width: 60px;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+  }
+  .frm-inpt{
+    *width: 90%;
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+    text-align: center;
+  }
+  input.readonly{
+    border-color: transparent;
+  }
+  .frm-error,input.frm-error{
+    border-color: #ff5350;
+  }
+  span.txt-error,span.error{
+    height: 20px;
+  }
+  .rows-disabled{
+    td,input,select{
+      color: #CCC;
+    }
+    .icon-date,select{
+      opacity: 0.5;
+      -ms-filter:alpha(opacity=50);
+      // pointer-events: none;
+    }
+  }
+}
+.txt-center{
+  th,td{
+    text-align: center;
+  }
+  .except{
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+.txt-right{
+  th,td{
+    text-align: right;
+  }
+}
+.form-total-bar{
+  line-height: 1.5;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: right;
+  .total-persion{
+    .total{
+
+    }
+  }
+  .total-fee{
+    margin-left: 20px;
+    .total{
+      font-size: 20px;
+      color: #ff6f3c;
+    }
+  }
+}
+
+.form-table2{
+  .row-bd{
+    th{
+      text-align: left;
+      padding-left: 20px;
+      background-color: #fffdf5;
+    }
+  }
+}
+
+.label-table{
+    col.label{
+        background-color: #fffdf5;
+        width: 114px;
+    }
+}
+.filter-table{
+    caption{
+        margin-bottom: 20px;
+    }
+    .frm-inpt{
+        padding: 6px 0;
+        border: solid 1px #e3e3e3;
+    }
+    .date-picker,.split{
+        display: inline;
+        float: left;
+        vertical-align: middle;
+        height: 32px;
+        line-height: 32px;
+    }
+    .date-picker{
+        width: 45%;
+        border: solid 1px #e3e3e3;
+        text-align:left;
+        padding: 0;
+        .date-txt{
+            display: block;
+            width: 97%;
+            height: 32px;
+            line-height: 32px;
+            padding-left: 5px;
+            text-indent: 5px;
+            overflow: hidden;
+        }
+        i.icon-date{
+            right: 5px;
+        }
+    }
+    .split{
+        width: 10%;
+        text-align: center;
+        margin: 0 -2px;
+    }
+    td.label{
+        width: 114px;
+        text-align: right;
+    }
+    tr{
+        height: 46px;
+        line-height: 23px;
+    }
+    .btns-foot{
+        line-height: 46px;
+        text-align: center;
+        td{
+            padding-top: 10px;
+        }
+        .btns{
+            min-width: 60px;
+            margin: 0 10px;
+        }
+        button.btns, input.btns{
+            min-width: 80px;
+        }
+    }
+}
+//end tables

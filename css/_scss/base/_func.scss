@@ -1,0 +1,9 @@
+// pixels to em 
+@function em( $px ) {
+    @if $px != 0{
+      @return ($px+0.01) / $baseFontSize * 1em;
+    }
+    @else{
+      @return 0;
+    }
+}

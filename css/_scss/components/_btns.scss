@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import '../base/_config';
+
+//ui btns start
+.btns-box{
+  text-align: center;
+  .btns{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.btns{
+    cursor: pointer;
+    display: inline-block;
+    min-width: 40px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    word-wrap: normal;
+    color: #FFF;
+    vertical-align: middle;
+    padding: 0 10px;
+    border: 0 none;
+    background-color: #00a9de;
+    border-radius: 4px;
+    
+    &:visited,&:hover,&:active,&:focus{
+        color:#FFF;
+        outline: 0 none;
+        text-decoration: none;
+        background-color: darken($theme-color,5%)
+    }
+}
+button.btns,
+input.btns{
+  min-width: 60px;
+}
+
+//btns width set by parents
+.btns-s{
+  height: 16px;
+  line-height: 16px;
+  border-radius: 2px;
+}
+.btns-l{
+  min-width: 84px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 5px;
+}
+button.btns-l,
+input.btns-l{
+  min-width: 100px;
+}
+.btns-disabled{
+  cursor:not-allowed;
+  color: #999;
+  background-color: #CCC;
+  &:visited,&:hover,&:active,&:focus{
+        color:#999;
+      background-color: #CCC;
+  }
+
+}
+//end ui btns
