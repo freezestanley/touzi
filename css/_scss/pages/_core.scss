@@ -9,7 +9,7 @@
     height: 52px;
     display: block;
     background-repeat: no-repeat;
-    background-image: url(../../images/icon_core.png);
+    background-image: url(../images/icon_core.png);
     margin: 0 auto 30px;
     @for $i from 0 through 8 {
       &.icon#{$i+1}{

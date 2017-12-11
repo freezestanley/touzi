@@ -34,7 +34,7 @@
     padding-left: 150px;
     margin-top: 30px;
     float: left;
-    background: url(../../images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     color: #8a8a8a;
     font-size: 14px;
     white-space: nowrap;
@@ -111,7 +111,7 @@
           width: 96px;
           height: 96px;
           background-repeat: no-repeat;
-          background-image: url(../../images/icon_home.png);
+          background-image: url(../images/icon_home.png);
           margin: 0 auto 30px;
           &.icon1{
             background-position: 0 0;
@@ -152,7 +152,7 @@
     vertical-align: middle;
     margin: 0 12px 0 22px;
     background-repeat: no-repeat;
-    background-image: url(../../images/icon_footer.png);
+    background-image: url(../images/icon_footer.png);
     &.icon1{
       background-position: 0 0;
     }
