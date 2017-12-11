@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="大数据、大数据风控、反欺诈" />
+  <meta name="description" content="大数据、大数据风控、反欺诈" />
+    <meta charset="utf-8">
+    <title>众安科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+    <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+    <link href="/stylesheets/common.css" rel="stylesheet"/>
+    <script src="/widget/browser.js"></script>
+    <script src="/widget/modernizr-svg.js"></script>
+    <script src="/widget/polyfill.js"></script>
+    <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg_data">
+        <div class="pg_header">
+          <div class="w1200Center">
+            <h1 class="logo"><a href="/">众安科技</a></h1>
+            <div class="nav">
+              <div class="nav-item">
+                <a href="/index.html">首页</a>
+              </div>
+              <div class="nav-item">
+                <a href="/product/sass.html">产品</a>
+                <ul>
+                  <li><a href="/product/sass.html">保险SAAS</a></li>
+                  <li><a href="/product/health.html">健康生态圈</a></li>
+                  <li><a href="/product/cloud.html">云代理产品</a></li>
+                  <li><a href="/product/exam.html">认证与培训</a></li>
+                  <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/data/queryinfo.html">大数据</a>
+                <ul>
+                  <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                  <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                  <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                  <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                  <li><a href="/data/analysis.html">流量分析运营</a></li>
+                  <li><a href="/data/union.html">关于数盟</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/news/list.html">新闻</a>
+              </div>
+              <div class="nav-item">
+                <a href="/aboutus.html">关于我们</a>
+              </div>
+            </div>
+
+            <!-- <div class="nav2">
+             <a href="#">English</a>
+             <a href="#">登录</a>
+             <a href="#">注册</a>
+            </div> -->
+
+            <script>
+            	$(function(){
+                var seled=2;
+                var nav_cur;
+                var nav_timer;
+                $('.nav-item').removeClass('cur');
+                $(".nav-item").eq(seled).addClass("cur");
+                $('.nav-item').each(function(){
+                  if($(this).hasClass('cur')){
+                    nav_cur = $('.nav-item').index($(this))
+                  }
+                })
+                $('.nav-item').on('mouseenter',function(){
+                  $('.nav-item').removeClass('cur');
+                  $(this).find('ul').stop().fadeIn(350);
+                  $(this).addClass('cur');
+                }).on('mouseleave',function(){
+                  $(this).find('ul').stop().fadeOut(350);
+                  // clearTimeout(nav_timer);
+                  // nav_timer = setTimeout(function(){
+                  //   $('.nav-item').removeClass('cur');
+                  //   $('.nav-item').eq(nav_cur).addClass('cur');
+                  // },150);
+                });
+              });
+            </script>
+
+          </div>
+        </div>
+      <div class="bg009BDC">
+        <div class="w1200Center pd_topicbanner slider-block ani">
+        <img src="/images/datatopic1.png" id="topicBan"><div class="data-div slide-up-in layer">
+          <p class="data-title"></p><p class="data-content"></p>
+        </div>
+        <p>信息核查服务</p>
+        <ul class="pd_topicnav">
+          <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+          <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+          <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+          <li><a href="/data/toolplat.html">风险工具平台</a></li>
+          <li><a href="/data/analysis.html">流量分析运营</a></li>
+          <li><a href="/data/union.html">关于数盟</a></li>
+        </ul>
+        </div>
+        <script>
+          var data=[{
+            title:'信息核查服务',
+            content:'一站式聚合海量合作数据源及众安特有的跨行业全生态客户标签矩阵',
+            src:'/images/data/data1.png'
+          },{
+            title:'信贷风控服务',
+            content:'针对信贷行业提供覆盖贷前、贷中、贷后全贷款流程的专业化一站式线上实时风险控制解决方案',
+            src:'/images/data/data2.png'
+          },{
+            title:'反欺诈服务',
+            content:'基于大数据为客户在账户、支付、交易、接口、短信、营销活动等环节提供安全防护，为各类行业提供一站式反欺诈服务',
+            src:'/images/data/data3.png'
+
+          },{
+            title:'风险工具平台',
+            content:'提供完整的企业级大数据风险控制和定价系统解决方案，解决金融机构在“互联网化新业务模式下搭建支持互联网级大数据的实时风控系统的难题。',
+            src:'/images/data/data4.png'
+
+          },{
+            title:'流量分析运营',
+            content:'通过自动化埋点工具来提供访问者分析，流量渠道分析，内容分析和转化分析等用户行为分析，打造可量化效果、高效管理的互联网流量管理平台',
+            src:'/images/data/data5.png'
+
+          },{
+            title:'专业的大数据风控和精细化运营服务提供商',
+            content:'致力于运用大数据技术为小微互联网金融平台和互联网化进程中的传统金融机构解决风险控制和精细化运营问题',
+            src:'/images/data/data6.png'
+          },
+          ];
+          (function(){
+            var seled = 0;
+            $($('.pd_topicnav li').get(seled)).addClass('seled');
+            $("#topicBan").attr("src",data[seled].src);
+            $(".data-title").text(data[seled].title);
+            $(".data-content").text(data[seled].content);
+          })()
+        </script>
+
+      </div>
+      <div class="pg_detail w1200Center mt40">
+          <div class="pg_contain ">
+            <div class="pd_title">一站式征信大数据接入</div>
+            <p class=" mb50">广泛对接第三方征信机构、银行、第三方支付、政府公开平台、电商平台、权威的数据服务提供商以及众安特有的跨行业全生态客户标签矩阵。
+通过规模化的数据集中采购，降低客户成本；利用爬虫技术对开放的网络信息进行采集、清洗，如社交网站、网贷负面信息等，对其数据进行补充；
+借助大数据技术对各数据源进行有效整合与分析，减少数据可用性探索与分析难度。信息核查服务实现了 “一站式征信大数据统一接入”服务，帮助
+小微互联网金融平台和互联网化进程中的传统金融机构降低数据接入成本， 减少数据可用性探索与分析难度，快速实现大数据征信在业务中的应用。</p>
+            <div class="pd_title">热门大数据</div>
+
+
+            <div class="query_table3line mb10">
+              <div class="query_table3line_cell fl">
+                <div class="cellicon cell2 mb30"></div>
+                <div class="title3">运营商信息核查</div>
+                <dl>
+                    <dd>手机实名验证</dd>
+                    <dd>手机在网时长</dd>
+                    <dd>手机在网状态</dd>
+                    <dd>手机两要素验证</dd>
+                    <dd>手机三要素验证</dd>
+                    <dd>手机归属地查询</dd>
+                </dl>
+            </div>
+                    <div class="query_table3line_cell fr">
+                      <div class="cellicon cell3 mb30"></div>
+                      <div class="title3">企业信息核查</div>
+                      <dl>
+                          <dd>企业基本工商信息</dd>
+                          <dd>企业工商年报信息</dd>
+                          <dd>企业投资信息</dd>
+                          <dd>企业财务信息</dd>
+                          <dd>企业舆情信息</dd>
+                          <dd>企业联系方式</dd>
+                      </dl>
+                    </div>
+
+
+
+
+                  <div class="query_table3line_cell mauto">
+                    <div class="cellicon cell1 mb30"></div>
+                    <div class="title3">银行卡信息核查</div>
+                    <dl>
+                        <dd>银行卡两要素验证</dd>
+                        <dd>银行卡三要素验证</dd>
+                        <dd>银行卡四要素验证</dd>
+                        <dd>银行卡Bin查询</dd>
+                        <dd>银行卡四要素验证</dd>
+                        <dd>银行账户信息核验</dd>
+                    </dl>
+                  </div>
+            </div>
+            <div class="query_table3line mb50 ">
+                    <div class="query_table3line_cell h245 fl">
+                      <div class="cellicon cell4 mb30"></div>
+                      <div class="title3">车辆信息核查</div>
+                      <dl>
+                        <dd>车辆违章信息查询</dd>
+                        <dd>驾驶证信息比对</dd>
+                        <dd>行驶证基本信息比对</dd>
+                        <dd>机动车车型信息查询</dd>
+                      </dl>
+                  </div>
+
+                    <div class="query_table3line_cell h245 fr">
+                      <div class="cellicon cell6 mb30"></div>
+                      <div class="title3">身份信息核查</div>
+                      <dl>
+                          <dd>身份实名核验</dd>
+                          <dd>人像比对</dd>
+                      </dl>
+                    </div>
+
+
+
+
+                  <div class="query_table3line_cell h245 mauto">
+                    <div class="cellicon cell5 mb30"></div>
+                    <div class="title3">教育信息核查</div>
+                    <dl>
+                      <dd>学历信息查询</dd>
+                      <dd>学籍比对</dd>
+                    </dl>
+                  </div>
+            </div>
+
+          </div>
+      </div>
+        <div class="footer">
+            <div class="w1200">
+              <div class="ft_info">
+                <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+                <div>
+                  <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+                </div>
+              </div>
+
+
+              <ul class="ft_qrcode">
+                <li>
+                    <img src="/images/wbqrcode.jpg"/>
+                    <span>官方微博</span>
+                </li>
+                <li>
+                    <img src="/images/wxqrcode.jpg"/>
+                    <span>微信公众号</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="cornerbar">
+          <div class="item item-1 ui-hover">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                邮箱:service@zhongan.io
+              </div>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                电话:021-60276816
+              </div>
+            </div>
+          </div>
+          <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+        </div>
+    </div>
+  </div>
+
+
+<div>
+  <script>
+    var zero_config = {
+        // controller 地址
+        controller: '',
+
+        // 需要js处理的页面数据
+        data: {
+
+        },
+
+        // require.js的配置信息（如果需要）
+        paths: {},
+        shim: {}
+    }
+    </script>
+  <script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+  <script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</div>
+
+</body>
+</html>
