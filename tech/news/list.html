@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>众安科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+    <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+    <link href="/stylesheets/common.css" rel="stylesheet"/>
+    <script src="/widget/browser.js"></script>
+    <script src="/widget/modernizr-svg.js"></script>
+    <script src="/widget/polyfill.js"></script>
+    <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg-news">
+        <div class="pg_header">
+          <div class="w1200Center">
+            <h1 class="logo"><a href="/">众安科技</a></h1>
+            <div class="nav">
+              <div class="nav-item">
+                <a href="/index.html">首页</a>
+              </div>
+              <div class="nav-item">
+                <a href="/product/sass.html">产品</a>
+                <ul>
+                  <li><a href="/product/sass.html">保险SAAS</a></li>
+                  <li><a href="/product/health.html">健康生态圈</a></li>
+                  <li><a href="/product/cloud.html">云代理产品</a></li>
+                  <li><a href="/product/exam.html">认证与培训</a></li>
+                  <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/data/queryinfo.html">大数据</a>
+                <ul>
+                  <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                  <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                  <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                  <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                  <li><a href="/data/analysis.html">流量分析运营</a></li>
+                  <li><a href="/data/union.html">关于数盟</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/news/list.html">新闻</a>
+              </div>
+              <div class="nav-item">
+                <a href="/aboutus.html">关于我们</a>
+              </div>
+            </div>
+
+            <!-- <div class="nav2">
+             <a href="#">English</a>
+             <a href="#">登录</a>
+             <a href="#">注册</a>
+            </div> -->
+
+            <script>
+            	$(function(){
+                var seled=3;
+                var nav_cur;
+                var nav_timer;
+                $('.nav-item').removeClass('cur');
+                $(".nav-item").eq(seled).addClass("cur");
+                $('.nav-item').each(function(){
+                  if($(this).hasClass('cur')){
+                    nav_cur = $('.nav-item').index($(this))
+                  }
+                })
+                $('.nav-item').on('mouseenter',function(){
+                  $('.nav-item').removeClass('cur');
+                  $(this).find('ul').stop().fadeIn(350);
+                  $(this).addClass('cur');
+                }).on('mouseleave',function(){
+                  $(this).find('ul').stop().fadeOut(350);
+                  // clearTimeout(nav_timer);
+                  // nav_timer = setTimeout(function(){
+                  //   $('.nav-item').removeClass('cur');
+                  //   $('.nav-item').eq(nav_cur).addClass('cur');
+                  // },150);
+                });
+              });
+            </script>
+
+          </div>
+        </div>
+        <div class="news_topic">
+          <h2>新闻资讯</h2>
+          <h4>行业资讯发展动态,一览无余</h4>
+        </div>
+
+        <div class="w1200Center" style="width:980px;min-width:980px;">
+          <div class="news_title">
+              <span>新闻资讯</span>
+              <ul>
+                  <li class="seled"><a href="">众科资讯</a></li>
+                  <!--li><a href="">媒体报道</a></li>
+                  <li><a href="">行业动态</a></li-->
+              </ul>
+          </div>
+          <div class="news_recode">
+              <ul>
+                  <li>
+
+                      <img src="https://tech.zhongan.com/images/conference/a2.jpg"/>
+                      <div>
+                          <a href="/news/artcle201612071.html">
+                          <h2>众安保险成立子公司众安科技 输出区块链/人工智能等技术</h2>
+                          <p>众安保险11月2日宣布，正式成立全资子公司众安信息技术服务有限公司(以下简称“众安科技”)。众安科技董事长姜兴表示，未来将加大区块链、人工智能等新技术的研发应用。</p>
+                          <ul>
+                              <li><span class="boder_e7e7e7 r20">新闻资讯</span></li>
+                              <li><span>浏览：10次</span></li>
+                              <li><span>发布：2016-12-15</span></li>
+                          </ul>
+                        </a>
+                      </div>
+                  </li>
+                  <li>
+                      <img src="https://tech.zhongan.com/images/conference/a5.jpg"/>
+                      <div>
+                        <a href="/news/artcle201612072.html">
+                          <h2>众安科技联合多行业深度合作，共筑区块链联盟</h2>
+                          <p>国内首家互联网保险公司众安保险2日在上海宣布成立全资产子公司众安信息技术服务有限公司（简称“众安科技”.新成立的众安科技瞄准了一个更大的目标,将原来服务众安保险的底层技术和创新能力输出到普惠金融和健康医疗领域.</p>
+                          <ul>
+                              <li><span class="boder_e7e7e7 r20">新闻资讯</span></li>
+                              <li><span>浏览：12次</span></li>
+                              <li><span>发布：2016-12-15</span></li>
+                          </ul>
+                        </a>
+                      </div>
+                  </li>
+                  <li>
+                      <img src="https://tech.zhongan.com/images/conference/a7.jpg"/>
+                      <div>
+                          <a href="/news/artcle201612073.html">
+                          <h2>区块链探索军备赛拉开，众安科技联合复旦大学成立区块链实验室</h2>
+                          <p>众安科技宣布，该公司将联合复旦大学计算机科学院成立一个专注于区块链研究的“区块链与信息安全联合实验室”，致力于进行区块链相关技术的底层理论研究，以帮助众安科技提高区块链技术实力。</p>
+                          <ul>
+                              <li><span class="boder_e7e7e7 r20">新闻资讯</span></li>
+                              <li><span>浏览：10次</span></li>
+                              <li><span>发布：2016-12-15</span></li>
+                          </ul>
+                        </a>
+                      </div>
+                  </li>
+                  <li>
+                      <img src="/images/data/news_4.jpg"/>
+                      <div>
+                          <a href="/news/artcle201612074.html">
+                          <h2>众安成立了同时做区块链和AI的子公司，CTO说出了这几个真相</h2>
+                          <p>未来众安科技将输出一个区块链云平台，首先针对金融、健康医疗两个领域提供人工智能、区块链、云计算和大数据四大模块提供支持，并进行相关研发。</p>
+                          <ul>
+                              <li><span class="boder_e7e7e7 r20">新闻资讯</span></li>
+                              <li><span>浏览：10次</span></li>
+                              <li><span>发布：2016-12-15</span></li>
+                          </ul>
+                        </a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="w1200">
+              <div class="ft_info">
+                <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+                <div>
+                  <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+                </div>
+              </div>
+
+
+              <ul class="ft_qrcode">
+                <li>
+                    <img src="/images/wbqrcode.jpg"/>
+                    <span>官方微博</span>
+                </li>
+                <li>
+                    <img src="/images/wxqrcode.jpg"/>
+                    <span>微信公众号</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="cornerbar">
+          <div class="item item-1 ui-hover">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                邮箱:service@zhongan.io
+              </div>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                电话:021-60276816
+              </div>
+            </div>
+          </div>
+          <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+        </div>
+    </div>
+  </div>
+
+
+<div>
+  <script>
+    var zero_config = {
+        // controller 地址
+        controller: '',
+
+        // 需要js处理的页面数据
+        data: {
+
+        },
+
+        // require.js的配置信息（如果需要）
+        paths: {},
+        shim: {}
+    }
+    </script>
+  <script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+  <script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</div>
+
+</body>
+</html>

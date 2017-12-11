@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+  <meta name="description" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+    <meta charset="utf-8">
+    <title>众安科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+    <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+    <link href="/stylesheets/common.css" rel="stylesheet"/>
+    <script src="/widget/browser.js"></script>
+    <script src="/widget/modernizr-svg.js"></script>
+    <script src="/widget/polyfill.js"></script>
+    <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg-aboutus">
+        <div class="pg_header">
+          <div class="w1200Center">
+            <h1 class="logo"><a href="/">众安科技</a></h1>
+            <div class="nav">
+              <div class="nav-item">
+                <a href="/index.html">首页</a>
+              </div>
+              <div class="nav-item">
+                <a href="/product/sass.html">产品</a>
+                <ul>
+                  <li><a href="/product/sass.html">保险SAAS</a></li>
+                  <li><a href="/product/health.html">健康生态圈</a></li>
+                  <li><a href="/product/cloud.html">云代理产品</a></li>
+                  <li><a href="/product/exam.html">认证与培训</a></li>
+                  <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/data/queryinfo.html">大数据</a>
+                <ul>
+                  <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                  <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                  <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                  <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                  <li><a href="/data/analysis.html">流量分析运营</a></li>
+                  <li><a href="/data/union.html">关于数盟</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/news/list.html">新闻</a>
+              </div>
+              <div class="nav-item">
+                <a href="/aboutus.html">关于我们</a>
+              </div>
+            </div>
+
+            <!-- <div class="nav2">
+             <a href="#">English</a>
+             <a href="#">登录</a>
+             <a href="#">注册</a>
+            </div> -->
+
+            <script>
+            	$(function(){
+                var seled=4;
+                var nav_cur;
+                var nav_timer;
+                $('.nav-item').removeClass('cur');
+                $(".nav-item").eq(seled).addClass("cur");
+                $('.nav-item').each(function(){
+                  if($(this).hasClass('cur')){
+                    nav_cur = $('.nav-item').index($(this))
+                  }
+                })
+                $('.nav-item').on('mouseenter',function(){
+                  $('.nav-item').removeClass('cur');
+                  $(this).find('ul').stop().fadeIn(350);
+                  $(this).addClass('cur');
+                }).on('mouseleave',function(){
+                  $(this).find('ul').stop().fadeOut(350);
+                  // clearTimeout(nav_timer);
+                  // nav_timer = setTimeout(function(){
+                  //   $('.nav-item').removeClass('cur');
+                  //   $('.nav-item').eq(nav_cur).addClass('cur');
+                  // },150);
+                });
+              });
+            </script>
+
+          </div>
+        </div>
+        <div class="aboutus_topic">
+          <h2>关于我们</h2>
+          <h4>塑造开放的科技生态，共创商业价值</h4>
+        </div>
+
+        <div class="w1200Center" style="width:980px;">
+            <div class="us_text">
+                <div class="us_topic">公司使命</div>
+                <p>成为保险生态信息化升级的助推器<br/>成为区块链,人工智能等新技术,新方法应用的领跑者<br/>成为众安内部及外部合作伙伴创新创业的孵化器</p>
+            </div>
+            <div class="us_text">
+                <div class="us_topic">公司介绍</div>
+                <p>
+                  众安科技是一家专注于前沿技术研究和提供基础技术产品与服务的科技公司，通过提供科技产品和服务创造价值。我们服务于金融行业生态圈，是企业间的“科技连接器”。众安科技是一家开放式创新企业，即不止于自己研发和商业化的封闭式内部创新模式，而是与行业生态圈中的技术和商业合作伙伴进行合作，共同开拓市场的创新方式。
+                </p>
+                <div class="us_img">
+                    <img src="/images/us_1.jpg" class="fl"/>
+                    <img src="/images/us_3.jpg" class="fr"/>
+                    <img src="/images/us_2.jpg" class="mauto"/>
+                </div>
+            </div>
+
+            <div class="us_map">
+                <div class="map_topic">联系方式</div>
+                <div class="map_dialog">
+                    <i class="map_dot"></i>
+                    <div ><i class="us_phone"></i>021-60276816</div>
+                    <div ><i class="us_mail"></i>service@zhongan.io</div>
+                    <div ><i class="us_address"></i>上海黄浦区北京东路130号中实大楼</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="w1200">
+              <div class="ft_info">
+                <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+                <div>
+                  <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+                </div>
+              </div>
+
+
+              <ul class="ft_qrcode">
+                <li>
+                    <img src="/images/wbqrcode.jpg"/>
+                    <span>官方微博</span>
+                </li>
+                <li>
+                    <img src="/images/wxqrcode.jpg"/>
+                    <span>微信公众号</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="cornerbar">
+          <div class="item item-1 ui-hover">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                邮箱:service@zhongan.io
+              </div>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                电话:021-60276816
+              </div>
+            </div>
+          </div>
+          <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+        </div>
+    </div>
+  </div>
+
+
+<div>
+  <script>
+    var zero_config = {
+        // controller 地址
+        controller: '',
+
+        // 需要js处理的页面数据
+        data: {
+
+        },
+
+        // require.js的配置信息（如果需要）
+        paths: {},
+        shim: {}
+    }
+    </script>
+  <script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+  <script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</div>
+
+</body>
+</html>

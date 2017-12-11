@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+  <meta name="description" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+  <link href="/stylesheets/common.css" rel="stylesheet"/>
+  <script src="/widget/modernizr-svg.js"></script>
+  <script src="/widget/polyfill.js"></script>
+  <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg-aboutus">
+      <div class="pg_header">
+        <div class="w1200Center">
+          <h1 class="logo"><a href="/">众安科技</a></h1>
+          <div class="nav">
+            <div class="nav-item">
+              <a href="/index.html">首页</a>
+            </div>
+            <div class="nav-item">
+              <a href="/product/sass.html">产品</a>
+              <ul>
+                <li><a href="/product/sass.html">保险SAAS</a></li>
+                <li><a href="/product/health.html">健康生态圈</a></li>
+                <li><a href="/product/cloud.html">云代理产品</a></li>
+                <li><a href="/product/exam.html">认证与培训</a></li>
+                <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a href="/data/queryinfo.html">大数据</a>
+              <ul>
+                <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                <li><a href="/data/analysis.html">流量分析运营</a></li>
+                <li><a href="/data/union.html">关于数盟</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a href="/news/list.html">新闻</a>
+            </div>
+            <div class="nav-item">
+              <a href="/aboutus.html">关于我们</a>
+            </div>
+          </div>
+
+          <!-- <div class="nav2">
+           <a href="#">English</a>
+           <a href="#">登录</a>
+           <a href="#">注册</a>
+          </div> -->
+
+          <script>
+          	$(function(){
+              var seled=;
+              var nav_cur;
+              var nav_timer;
+              $('.nav-item').removeClass('cur');
+              $(".nav-item").eq(seled).addClass("cur");
+              $('.nav-item').each(function(){
+                if($(this).hasClass('cur')){
+                  nav_cur = $('.nav-item').index($(this))
+                }
+              })
+              $('.nav-item').on('mouseenter',function(){
+                $('.nav-item').removeClass('cur');
+                $(this).find('ul').stop().fadeIn(350);
+                $(this).addClass('cur');
+              }).on('mouseleave',function(){
+                $(this).find('ul').stop().fadeOut(350);
+                // clearTimeout(nav_timer);
+                // nav_timer = setTimeout(function(){
+                //   $('.nav-item').removeClass('cur');
+                //   $('.nav-item').eq(nav_cur).addClass('cur');
+                // },150);
+              });
+            });
+          </script>
+
+        </div>
+      </div>
+      <div class="error-page clearfix">
+        <div class="fl">
+          <p class="error-p1">您的浏览器版本较低</p>
+          <p class="error-p2">为了您能正常使用网站功能，请升级浏览器</p>
+          <a href="http://download.microsoft.com/download/7/8/8/788B10AB-C1D7-4DA9-BADF-2A939D769A43/IE11-Windows6.1-x86-zh-hk.exe"><div class="updateNow">IE11立即升级</div></a>
+        </div>
+        <div class="bg-error fr"></div>
+      </div>
+      <div class="footer">
+          <div class="w1200">
+            <div class="ft_info">
+              <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+              <div>
+                <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+              </div>
+            </div>
+
+
+            <ul class="ft_qrcode">
+              <li>
+                  <img src="/images/wbqrcode.jpg"/>
+                  <span>官方微博</span>
+              </li>
+              <li>
+                  <img src="/images/wxqrcode.jpg"/>
+                  <span>微信公众号</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="cornerbar">
+        <div class="item item-1 ui-hover">
+          <div class="ui-poptip">
+            <div class="ui-poptip-container">
+              <div class="ui-poptip-arrow-right">
+                <i>◆</i>
+                <span>◆</span>
+              </div>
+              邮箱:service@zhongan.io
+            </div>
+          </div>
+        </div>
+        <div class="item item-2">
+          <div class="ui-poptip">
+            <div class="ui-poptip-container">
+              <div class="ui-poptip-arrow-right">
+                <i>◆</i>
+                <span>◆</span>
+              </div>
+              电话:021-60276816
+            </div>
+          </div>
+        </div>
+        <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <script>
+      var zero_config = {
+        // controller 地址
+        controller: '',
+
+        // 需要js处理的页面数据
+        data: {
+
+        },
+
+        // require.js的配置信息（如果需要）
+        paths: {},
+        shim: {}
+      }
+    </script>
+    <script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+    <script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+  </div>
+
+</body>
+</html>

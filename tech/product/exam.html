@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="大数据、大数据风控、反欺诈" />
+  <meta name="description" content="大数据、大数据风控、反欺诈" />
+    <meta charset="utf-8">
+    <title>众安科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+    <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+    <link href="/stylesheets/common.css" rel="stylesheet"/>
+    <script src="/widget/browser.js"></script>
+    <script src="/widget/modernizr-svg.js"></script>
+    <script src="/widget/polyfill.js"></script>
+    <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg_product">
+      <div class="pg_header">
+        <div class="w1200Center">
+          <h1 class="logo"><a href="/">众安科技</a></h1>
+          <div class="nav">
+            <div class="nav-item">
+              <a href="/index.html">首页</a>
+            </div>
+            <div class="nav-item">
+              <a href="/product/sass.html">产品</a>
+              <ul>
+                <li><a href="/product/sass.html">保险SAAS</a></li>
+                <li><a href="/product/health.html">健康生态圈</a></li>
+                <li><a href="/product/cloud.html">云代理产品</a></li>
+                <li><a href="/product/exam.html">认证与培训</a></li>
+                <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a href="/data/queryinfo.html">大数据</a>
+              <ul>
+                <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                <li><a href="/data/analysis.html">流量分析运营</a></li>
+                <li><a href="/data/union.html">关于数盟</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a href="/news/list.html">新闻</a>
+            </div>
+            <div class="nav-item">
+              <a href="/aboutus.html">关于我们</a>
+            </div>
+          </div>
+
+          <!-- <div class="nav2">
+           <a href="#">English</a>
+           <a href="#">登录</a>
+           <a href="#">注册</a>
+          </div> -->
+
+          <script>
+          	$(function(){
+              var seled=1;
+              var nav_cur;
+              var nav_timer;
+              $('.nav-item').removeClass('cur');
+              $(".nav-item").eq(seled).addClass("cur");
+              $('.nav-item').each(function(){
+                if($(this).hasClass('cur')){
+                  nav_cur = $('.nav-item').index($(this))
+                }
+              })
+              $('.nav-item').on('mouseenter',function(){
+                $('.nav-item').removeClass('cur');
+                $(this).find('ul').stop().fadeIn(350);
+                $(this).addClass('cur');
+              }).on('mouseleave',function(){
+                $(this).find('ul').stop().fadeOut(350);
+                // clearTimeout(nav_timer);
+                // nav_timer = setTimeout(function(){
+                //   $('.nav-item').removeClass('cur');
+                //   $('.nav-item').eq(nav_cur).addClass('cur');
+                // },150);
+              });
+            });
+          </script>
+
+        </div>
+      </div>
+      <div class="bg009BDC">
+        <div class="w1200Center pd_topicbanner slider-block ani">
+          <img src="/images/datatopic1.png" id="topicBan"><div class="data-div slide-up-in layer">
+          <p class="data-title"></p><p class="data-content"></p>
+        </div>
+        <ul class="pd_topicnav productNav">
+          <li><a href="/product/sass.html">保险SAAS</a></li>
+          <li><a href="/product/health.html">健康生态圈</a></li>
+          <li><a href="/product/cloud.html">云代理产品</a></li>
+          <li><a href="/product/exam.html">认证与培训</a></li>
+          <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+        </ul>
+        </div>
+        <script>
+          var data=[{
+            title:'保险SAAS云服务平台',
+            content:'服务保险公司及代理人，即买即用，无需额外IT投入，大大降低客户接入互联网的成本。',
+            src:'/images/product/productTopic1.png'
+          },{
+            title:'健康生态圈',
+            content:'构建开放医疗健康管理平台，打造健康金融生态圈（互联网+医疗+保险），构建互联网医疗的健康生态系统闭环，让用户更安全、专业、便捷地获取一站式健康管理服务。',
+            src:'/images/product/productTopic2.png'
+          },{
+            title:'阿里云铂金代理',
+            content:'由资审的阿里云产品与系统架构专家，为客户的系统在阿里云上落地提供专业性的指导意见，帮助客户解决云计算的各种使用问题。',
+            src:'/images/product/productTopic3.png'
+
+          },{
+            title:'专业认证与培训',
+            content:'提供完整的企业级大数据风险控制和定价系统解决方案，解决金融机构在“互联网化新业务模式下搭建支持互联网级大数据的实时风控系统的难题。',
+            src:'/images/product/productTopic4.png'
+
+          },{
+            title:'人工智能',
+            content:'机器以接近人类智能的方式解决复杂问题，通过机器学习、模式识别、计算机视觉、自然语言处理、生物识别等为保险、健康、金融产业升级服务。',
+            src:'/images/product/productTopic5.png'
+
+          }
+          ];
+          (function(){
+            var seled = 3,ban = 3;
+            $($('.pd_topicnav li').get(seled)).addClass('seled');
+            $("#topicBan").attr("src",data[seled].src);
+            $(".data-title").text(data[seled].title);
+            $(".data-content").text(data[seled].content);
+          })()
+        </script>
+
+      </div>
+      <div class="pg_detail">
+          <div class="pg_contain">
+            <div class="bg-F9FCFF">
+              <div class="part clearfix">
+                <div class="fl partImg01"></div>
+                <ul class="fr article">
+                  <li class="tt">阿里云认证培训</li>
+                  <li><span class="color-333">目标人群</span><em>&nbsp;&nbsp;|&nbsp;&nbsp;</em>架构师、开发者、系统运维人员</li>
+                  <li><span class="color-333">课程亮点</span><em>&nbsp;&nbsp;|&nbsp;&nbsp;</em><p>全面理解阿里云弹性计算、全面理解阿里云上的数据处理和分析、全面理解阿里云安全防护产品、全面理解阿里云产品与解决方案，在阿里云上进行应用开发。</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-EDF7FF">
+              <div class="part clearfix">
+                <div class="fr partImg02"></div>
+                <ul class="fl article">
+                  <li class="tt">专项职业技能培训</li>
+                  <li><span class="color-333">目标人群</span><em>&nbsp;&nbsp;|&nbsp;&nbsp;</em>架构师、开发者、系统运维人员</li>
+                  <li><span class="color-333">应用场景</span><em>&nbsp;&nbsp;|&nbsp;&nbsp;</em><p>手把手教你搭建大数据计算平台、手把手教你玩转微服务体系、手把手教你理解常用互联网中间件、手把手教你搭建区块链，保险业务系统架构设计与实践。</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="footer">
+            <div class="w1200">
+              <div class="ft_info">
+                <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+                <div>
+                  <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+                </div>
+              </div>
+
+
+              <ul class="ft_qrcode">
+                <li>
+                    <img src="/images/wbqrcode.jpg"/>
+                    <span>官方微博</span>
+                </li>
+                <li>
+                    <img src="/images/wxqrcode.jpg"/>
+                    <span>微信公众号</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="cornerbar">
+          <div class="item item-1 ui-hover">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                邮箱:service@zhongan.io
+              </div>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                电话:021-60276816
+              </div>
+            </div>
+          </div>
+          <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+        </div>
+    </div>
+  </div>
+
+
+<div>
+  <script>
+    var zero_config = {
+        // controller 地址
+        controller: '',
+
+        // 需要js处理的页面数据
+        data: {
+
+        },
+
+        // require.js的配置信息（如果需要）
+        paths: {},
+        shim: {}
+    }
+    </script>
+  <script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+  <script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>众安科技</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="image/x-icon" rel="shortcut icon" href="//static.zhongan.com/website/online/assets/images/favicon.ico">
+  <link href="//static.zhongan.com/website/public/zeropc/v1.0/css/main.css" rel="stylesheet"/>
+  <link href="/stylesheets/common.css" rel="stylesheet"/>
+  <script src="/widget/browser.js"></script>
+  <script src="/widget/modernizr-svg.js"></script>
+  <script src="/widget/polyfill.js"></script>
+  <script src="//static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+
+  <meta name="keywords" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+  <meta name="description" content="区块链、安链云、数据科学、人工智能、保险saas、保险接入、电商接入、大数据、大数据风控、反欺诈、云代理、云服务、云安全、云认证、云培训" />
+
+</head>
+<body>
+
+  <div id="viewport">
+    <div class="pg-main">
+      <div class="slider">
+
+        <div class="jquery-reslider">
+          <div class="w1200Center">
+            <h1 class="logo"><a href="/">众安科技</a></h1>
+            <div class="nav">
+              <div class="nav-item">
+                <a href="/index.html">首页</a>
+              </div>
+              <div class="nav-item">
+                <a href="/product/sass.html">产品</a>
+                <ul>
+                  <li><a href="/product/sass.html">保险SAAS</a></li>
+                  <li><a href="/product/health.html">健康生态圈</a></li>
+                  <li><a href="/product/cloud.html">云代理产品</a></li>
+                  <li><a href="/product/exam.html">认证与培训</a></li>
+                  <li><a href="/product/technology.html">数据科学与人工智能</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/data/queryinfo.html">大数据</a>
+                <ul>
+                  <li><a href="/data/queryinfo.html">信息核查服务</a></li>
+                  <li><a href="/data/beforecheck.html">信贷风控服务</a></li>
+                  <li><a href="/data/lieserver.html">反欺诈服务</a></li>
+                  <li><a href="/data/toolplat.html">风险工具平台</a></li>
+                  <li><a href="/data/analysis.html">流量分析运营</a></li>
+                  <li><a href="/data/union.html">关于数盟</a></li>
+                </ul>
+              </div>
+              <div class="nav-item">
+                <a href="/news/list.html">新闻</a>
+              </div>
+              <div class="nav-item">
+                <a href="/aboutus.html">关于我们</a>
+              </div>
+            </div>
+
+            <!-- <div class="nav2">
+             <a href="#">English</a>
+             <a href="#">登录</a>
+             <a href="#">注册</a>
+            </div> -->
+
+            <script>
+            	$(function(){
+                var seled=0;
+                var nav_cur;
+                var nav_timer;
+                $('.nav-item').removeClass('cur');
+                $(".nav-item").eq(seled).addClass("cur");
+                $('.nav-item').each(function(){
+                  if($(this).hasClass('cur')){
+                    nav_cur = $('.nav-item').index($(this))
+                  }
+                })
+                $('.nav-item').on('mouseenter',function(){
+                  $('.nav-item').removeClass('cur');
+                  $(this).find('ul').stop().fadeIn(350);
+                  $(this).addClass('cur');
+                }).on('mouseleave',function(){
+                  $(this).find('ul').stop().fadeOut(350);
+                  // clearTimeout(nav_timer);
+                  // nav_timer = setTimeout(function(){
+                  //   $('.nav-item').removeClass('cur');
+                  //   $('.nav-item').eq(nav_cur).addClass('cur');
+                  // },150);
+                });
+              });
+            </script>
+
+          </div>
+          <div class="slider1 slider-block ani" data-url="/images/ban/ban1_pic.png">
+            <div class="row">
+              <div class="layer slide-up-in"></div>
+              <a href="#" class="slide-up-in ui-btn layer">进一步了解→</a>
+            </div>
+          </div>
+          <div class="slider2 slider-block" data-url="/images/ban/ban2_pic.png">
+            <div class="row">
+              <div class="layer slide-up-in"></div>
+              <a href="#" class="slide-up-in ui-btn layer">进一步了解→</a>
+            </div>
+          </div>
+              <!-- <div class="slider-direction slider-direction-next"></div>
+              <div class="slider-direction slider-direction-prev"></div> -->
+              <div class="slider-dots">
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+      <!-- <div class="" id="part1">
+        <div class="header">
+          <i class="meteor meteor-1"></i>
+          <i class="meteor meteor-2"></i>
+          <i class="meteor meteor-3"></i>
+          <div class="row">
+            <h1 class="logo">众安科技</h1>
+            <div class="word fadein-top-down">
+              <div class="slogan"></div>
+              <div class="legend">科技与普惠金融、医疗健康的连接加速器</div>
+            </div>
+            <div class="earth"></div>
+            <div class="star1"></div>
+            <div class="light"></div>
+          </div>
+        </div>
+      </div> -->
+      <div id="">
+        <div class="box-2">
+          <div class="t">
+            <div class="h2">
+              <h2>产品与服务</h2>
+            </div>
+          </div>
+          <div class="product-service">
+            <ul class="card-area clearfix">
+              <li class="card-item" data-index="0">
+                <div class="card">
+                  <div class="card-title  title-even">
+                    <div class="content">
+                      <div class="product-img">
+                        <img src="/images/icon/prod2.png" alt="" class="un-hover">
+                      </div>
+                      <h1>保险SaaS</h1>
+                      <!-- <p class="short-info">专业领先、高性能、高可用</p> -->
+                    </div>
+                  </div>
+                  <div class="card-content content-first">
+                    <ul class="content-first-list">
+                      <li>保险&电商接入</li>
+                      <li>保险经纪云平台</li>
+                      <li>大数据增值服务</li>
+                      <li>电子签约</li>
+                    </ul>
+                  </div>
+                  <div class="card-content content-second">
+                    <div class="main-info">
+
+
+                        <p class="main-head">
+                          保险SaaS
+                        </p>
+
+                    </div>
+                    <ul class="other-info pt60">
+                      <li class="other-info-list">
+
+                        <h3 class="other-head">保险&电商接入</h3>
+
+                        <p class="other-desc">保险、电商云接入</p>
+                      </li>
+
+                      <li class="other-info-list">
+
+                        <h3 class="other-head">流量分析运营</h3>
+
+                        <p class="other-desc">数据驱动产品优化及运营</p>
+                      </li>
+
+                      <li class="other-info-list">
+                       <h3 class="other-head">大数据增值服务</h3>
+                       <p class="other-desc">账户安全、营销核保</p>
+                     </li>
+
+                     <li class="other-info-list">
+                      <h3 class="other-head">电子签约</h3>
+                      <p class="other-desc">在线签约、高效服务</p>
+                    </li>
+                  </ul>
+
+                  <a href="product/sass.html" class="ui-btn">进一步了解→</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-item active" data-index="1">
+              <div class="card">
+                <div class="card-title  title-even">
+                  <div class="content">
+                    <div class="product-img">
+                      <img src="/images/icon/prod1.png" alt="" class="un-hover">
+                    </div>
+                    <h1>大数据</h1>
+                    <!-- <p class="short-info">专业领先、高性能、高可用</p> -->
+                  </div>
+                </div>
+                <div class="card-content content-first">
+                  <ul class="content-first-list">
+                    <li class="w50per">信息核查服务</li>
+                    <li class="w50per">信贷风控服务</li>
+                    <li class="w50per">反欺诈服务</li>
+                    <li class="w50per">风控工具平台</li>
+                    <li>客户价值运营</li>
+                    <li>流量分析运营</li>
+                  </ul>
+                </div>
+                <div class="card-content content-second">
+                  <div class="main-info">
+                    <a href="javascript:void(0)"  class="no-effect">
+                      <p class="main-head">
+                        大数据
+                      </p>
+                    </a>
+                  </div>
+                  <ul class="other-info">
+                    <li class="other-info-list">
+                      <h3 class="other-head">信息核查服务</h3>
+                      <p class="other-desc">海量合作数据源一站式接入</p>
+                      <a href="data/queryinfo.html" class="list-context" >
+                        查看详情
+                      </a>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">信贷风控服务</h3>
+                      <p class="other-desc">信贷大数据风控解决方案</p>
+                      <a href="data/beforecheck.html" class="list-context" >
+                        查看详情
+                      </a>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">反欺诈服务</h3>
+                      <p class="other-desc">一站式解决欺诈难题</p>
+                      <a href="data/lieserver.html" class="list-context" >
+                        查看详情
+                      </a>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">风控工具平台</h3>
+                      <p class="other-desc">大数据风险控制和定价系统</p>
+                      <a href="data/toolplat.html" class="list-context" >
+                        查看详情
+                      </a>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">流量分析运营</h3>
+                      <p class="other-desc">数据驱动产品优化及运营</p>
+                      <a href="data/analysis.html" class="list-context" >
+                        查看详情
+                      </a>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">客户价值运营</h3>
+                      <p class="other-desc">客群分析及营销管理平台</p>
+                    </li>
+
+                  </ul>
+                  <a href="data/union.html" class="ui-btn">进一步了解→</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-item" data-index="2">
+              <div class="card">
+                <div class="card-title  title-even">
+                  <div class="content">
+                    <div class="product-img">
+                      <img src="/images/icon/prod4.png" alt="" class="un-hover">
+                    </div>
+                    <h1>健康生态</h1>
+                    <!-- <p class="short-info">专业领先、高性能、高可用</p> -->
+                  </div>
+                </div>
+                <div class="card-content content-first">
+                  <ul class="content-first-list">
+                    <li>智能健康管理</li>
+                    <li>智能医疗服务</li>
+                    <li>健康活动&社区</li>
+                    <li>健康增值服务</li>
+                  </ul>
+                </div>
+                <div class="card-content content-second">
+                  <div class="main-info">
+                    <p class="main-head">
+                      健康生态
+                    </p>
+                  </div>
+                  <ul class="other-info pt60">
+                    <li class="other-info-list h100">
+                      <h3 class="other-head">智能健康管理</h3>
+                      <p class="other-desc">构建覆盖四大人群精准智能健康管理平台，智能为用户提供健康管理服务</p>
+                    </li>
+
+                    <li class="other-info-list h100">
+                      <h3 class="other-head">智能医疗服务</h3>
+                      <p class="other-desc">采用人工智能方式为用户提供贴心／便捷的一站式就医服务</p>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">反欺诈服务</h3>
+                      <p class="other-desc">一站式解决欺诈难题</p>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">风控工具平台</h3>
+                      <p class="other-desc">大数据风险控制和定价系统</p>
+                    </li>
+
+                  </ul>
+
+                  <a href="product/health.html" class="ui-btn">进一步了解→</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-item" data-index="3">
+              <div class="card">
+                <div class="card-title  title-even">
+                  <div class="content">
+                    <div class="product-img">
+                      <img src="/images/icon/prod3.png" alt="" class="un-hover">
+                    </div>
+                    <h1>阿里云代理</h1>
+                    <!-- <p class="short-info">专业领先、高性能、高可用</p> -->
+                  </div>
+                </div>
+                <div class="card-content content-first">
+                  <ul class="content-first-list">
+                    <li>解决方案</li>
+                    <li>代理服务</li>
+                    <li>支持与培训</li>
+                  </ul>
+                </div>
+                <div class="card-content content-second">
+                  <div class="main-info">
+                    <p class="main-head">
+                      阿里云代理
+                    </p>
+                  </div>
+                  <ul class="other-info pt60">
+                    <li class="other-info-list h100">
+                      <h3 class="other-head">解决方案</h3>
+                      <p class="other-desc">私人订制解决方案</p>
+                    </li>
+
+                    <li class="other-info-list h100">
+                      <h3 class="other-head">代理服务</h3>
+                      <p class="other-desc">铂金代理服务商</p>
+                    </li>
+
+                    <li class="other-info-list">
+                      <h3 class="other-head">支持与培训</h3>
+                      <p class="other-desc">专业化支持团队</p>
+                    </li>
+
+
+                  </ul>
+
+                  <a href="product/cloud.html" class="ui-btn">进一步了解→</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="">
+      <div class="box-3">
+        <div class="txt"><span class="t">塑造价值</span>塑造开放的科技生态，共创商业价值</div>
+        <div class="txt"><span class="t">行业领跑</span>成为区块链、人工智能等新技术、新方法应用的领跑者</div>
+        <div class="txt"><span class="t">创新孵化</span>成为众安内部及外部合作伙伴创新创业的孵化器</div>
+      </div>
+    </div>
+
+    <div id="">
+      <div class="box-4">
+        <div class="row clearfix">
+          <div class="laptop">
+            <video src="//media.zhongan.io/db38a19559f3422c80d3f4aad3872927/act-ss-mp4-hd/zhongan-alink.mp4" loop="loop" autoplay></video>
+          </div>
+          <div class="intro">
+            <div class="t">
+              Anlink 安链云
+            </div>
+            <ul>
+              <li>
+                <img src="/images/icon/Anlink1.png" alt="">
+                <p>
+                  安链云
+                  <span>
+                    安链云是专注于健康、金融领域的行业技术解决方案提供商，以技术推进产业革新，致力于提升保险、医疗、金融的基础服务效能
+                  </span>
+                </p>
+              </li>
+              <li>
+                <img src="/images/icon/Anlink2.png" alt="">
+                <p>
+                  上海区块链企业发展促进联盟
+                  <span>
+                    由众安科技联合20余家商业伙伴共同发起成立的联盟，旨在探索区块链技术在商业应用上的发展，推动科技普惠与创新孵化
+                  </span>
+                </p>
+              </li>
+              <li>
+                <img src="/images/icon/Anlink3.png" alt="">
+                <p>
+                  复旦联合区块链实验室
+                  <span>
+                    由众安科技与复旦大学成立的联合实验室，专注区块链相关技术的底层理论研究，发挥各自优势，提高区块链领域内的自主创新能力
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <a href="http://www.anlink.com/" class="ui-btn">进一步了解→</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-5">
+      <a href="aboutus.html">
+
+        <div class="box-5">
+          <div class="t">
+            <div class="h2">
+              <h2>
+                数据科学与人工智能
+              </h2>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <div class="tit">计算机视觉</div>
+
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_person"></i>
+                头像识别
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_arrow"></i>
+                碎屏识别
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_t"></i>
+                OCR文字识别
+              </a>
+              <a href="javascript:void(0)" class="item">
+
+                <i class="icon icon_etc"></i>
+                更多
+              </a>
+            </li>
+            <li>
+              <div class="tit">大数据分析&实时风控</div>
+
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_finger"></i>
+                智能授信
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_brain2"></i>
+                风险画像
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_line"></i>
+                舆情监控
+              </a>
+              <a href="javascript:void(0)" class="item">
+
+                <i class="icon icon_etc"></i>
+                更多
+              </a>
+            </li>
+            <li>
+              <div class="tit">机器学习平台</div>
+
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_book"></i>
+                学习模型规范化
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_relative"></i>
+                流水线模型开发
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_triangle"></i>
+                数据增强工具
+              </a>
+              <a href="javascript:void(0)" class="item">
+
+                <i class="icon icon_pie"></i>
+                模型库工具库
+              </a>
+            </li>
+            <li>
+              <div class="tit">数据可视化</div>
+
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_bag"></i>
+                可视化分析
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_analyze"></i>
+                可视化工具
+              </a>
+              <a href="javascript:void(0)" class="item">
+                <i class="icon icon_option"></i>
+                可视化管理
+              </a>
+              <a href="javascript:void(0)" class="item">
+
+                <i class="icon icon_etc"></i>
+                更多
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </a>
+    </div>
+
+    <div id="">
+      <div class="box-6">
+        <div class="t">
+          <div class="h2">
+            <h2>引领科技,为创新而生</h2>
+          </div>
+        </div>
+        <p>
+          “以创新为火种，让我点亮你的明天；以大数据为基础，我们纪录你多方位表现；用数据重构你的未来，发现你的潜力；认真对待每次相遇，决不辜负你的信任；随时做好万全准备，匹配最佳金融方案；始终追求简单高效，理想生活无需犹豫；读懂你的财富期望，聪明实现增长流转；实现科学掌控健康，无论贫穷皆有所依；我用强大的科技力量，倾听你的需要，看到你的潜力，回应你的梦想。<br/>
+          <span>我是火种，温暖世界，燃爆未来。众安科技，与你同行。</span>”
+        </p>
+        <div class="mask"></div>
+        <img src="/images/index_v_bg.jpg" alt="">
+        <video src="//media.zhongan.io/36a60a40643b4a75b118ae80a8604f31/act-ss-mp4-hd/zhongan-index.mp4" loop="loop" autoplay>
+        </video>
+        <div class="btn_wv"></div>
+      </div>
+    </div>
+
+    <div id="" style="display:none;">
+      <div class="box-7">
+        <div class="t">
+          <div class="h2">
+            <h2>合作商家</h2>
+          </div>
+        </div>
+        <span class="icon-co co1"></span>
+        <span class="icon-co co2"></span>
+        <span class="icon-co co3"></span>
+        <span class="icon-co co4"></span>
+        <span class="icon-co co5"></span>
+        <span class="icon-co co6"></span>
+        <span class="icon-co co7"></span>
+        <span class="icon-co co8"></span>
+        <span class="icon-co co9"></span>
+      </div>
+    </div>
+
+    <div id="">
+      <div class="box-8">
+        <div class="t">
+          <div class="h2">
+            <h2>联系方式</h2>
+          </div>
+        </div>
+        <div class="map us_map">
+          <div class="map_dialog">
+            <div ><i class="us_phone"></i>021-60276816</div>
+            <div ><i class="us_mail"></i>service@zhongan.io</div>
+            <div ><i class="us_address"></i>上海黄浦区北京东路130号中实大楼</div>
+          </div>
+
+            <!-- <div class="tip">
+              <div class="text">
+                <div class="tit">地址</div>
+                上海黄浦区北京东路130号中实大楼
+                <div class="tit">邮箱</div>
+                <a href="mailto:service@zhongan.io">service@zhongan.io</a>
+              </div>
+            </div> -->
+            <div class="soho_location_large scale_per10" style="right:202px;top:202px;"><span class="shining_large"><i class="shining_large_before"></i></span></div>
+          </div>
+          <!-- <div class="us_map">
+              <div class="map_topic">联系方式</div>
+              <div class="map_dialog">
+                  <i class="map_dot"></i>
+                  <div ><i class="us_phone"></i>021-60276816</div>
+                  <div ><i class="us_mail"></i>service@zhongan.io</div>
+                  <div ><i class="us_address"></i>上海黄浦区北京东路130号中实大楼</div>
+              </div>
+
+            </div> -->
+          </div>
+        </div>
+
+        <div class="footer">
+            <div class="w1200">
+              <div class="ft_info">
+                <div class="mb15"><i class="iconTel_white"></i>联系电话:021-60276816<i class="iconEmail_white"></i>联系邮箱:service@zhongan.io</div>
+                <div>
+                  <a href="http://www.miitbeian.gov.cn/" style="color:#B0B5BB;text-decoration: none;">众安信息技术服务有限公司 版权所有 粤ICP备16087086号</a>
+                </div>
+              </div>
+
+
+              <ul class="ft_qrcode">
+                <li>
+                    <img src="/images/wbqrcode.jpg"/>
+                    <span>官方微博</span>
+                </li>
+                <li>
+                    <img src="/images/wxqrcode.jpg"/>
+                    <span>微信公众号</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="cornerbar">
+          <div class="item item-1 ui-hover">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                邮箱:service@zhongan.io
+              </div>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="ui-poptip">
+              <div class="ui-poptip-container">
+                <div class="ui-poptip-arrow-right">
+                  <i>◆</i>
+                  <span>◆</span>
+                </div>
+                电话:021-60276816
+              </div>
+            </div>
+          </div>
+          <div class="item item-3" onclick="window.scrollTo(0,0)"></div>
+        </div>
+   </div>
+ </div>
+
+ <div class="ui-mask" style="display:none"></div>
+ <div class="ui-block-msg">
+  <div class="ui-block-msg-body">
+    <div class="ui-block-msg-box">
+      <span class="ui-block-msg-close">
+        <i>X</i>
+      </span>
+      <!--播放视频实际元素-->
+      <video width="100%" height="auto" src="//media.zhongan.io/f0e0593ac7d94c2d8852c2e232b04ee0/act-ss-mp4-hd/zatech01.mp4" controls="controls">
+      </video>
+      <a >
+        <img id="img_display" style="display: none;">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="//static.zhongan.com/website/public/zeropc/v1.0/zero.seed.js" charset="utf-8"></script>
+<script src="//static.zhongan.com/website/public/js/ilog/dist/ilog.min.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?74cdd1f6c478524761e4361ace860a78";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="/widget/jquery.reslider.js"></script>
+<script>
+	$(function(){
+		$('.jquery-reslider').reSlider({
+			speed:440,//设置轮播的高度
+			delay:4000,//设置轮播的延迟时间
+			imgCount:2,//设置轮播的图片数
+			dots:true,//设置轮播的序号点
+			autoPlay:true//设置轮播是否自动播放
+		});
+
+    var css3Flag = $('html').hasClass('cssanimations');
+
+    // css3Flag && window.setTimeout(function(){
+    //   $('#part1').addClass('ani');
+    // },500);
+
+    $('.card-area').find('.card-item').on('mouseenter',function(){
+      $('.card-area').find('.card-item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.btn_wv').on('click',function(){
+      $('.ui-mask').show();
+      $('.ui-block-msg').css('visibility','visible').addClass('show');
+      $('.ui-block-msg video').get(0).play();
+    });
+    $('.ui-block-msg-close').on('click',function(){
+      $('.ui-mask').hide()
+      $('.ui-block-msg').removeClass('show').css('visibility','hidden');
+      $('.ui-block-msg video').get(0).pause();
+    });
+
+    function resizeVideoMask(){
+      $('.box-6 .mask').height($('.box-6 img').height());
+    }
+    //resizeVideoMask();
+    $(window).on('resize',function(){
+      //resizeVideoMask();
+
+    })
+    $(".slider-block a").click(function(){
+      $(".ani").hasClass("slider1")? window.location="https://www.zhongan.io/views/conference.html":window.location="http://www.anlink.com/";
+    })
+
+  });
+</script>
+</html>
